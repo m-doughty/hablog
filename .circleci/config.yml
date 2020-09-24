@@ -9,7 +9,7 @@ jobs:
           # Read about caching dependencies: https://circleci.com/docs/2.0/caching/
           name: Restore Cached Dependencies
           keys:
-            - cci-demo-haskell-v1-{{ checksum "stack.yaml" }}
+            - cci-demo-haskell-v1-{{ checksum "stack.yaml" }}-{{ checksum "hablog.cabal" }}
       - run:
           name: Resolve/Update Dependencies
           command: stack --no-terminal setup
@@ -21,11 +21,11 @@ jobs:
           command: stack --no-terminal install
       - save_cache:
           name: Cache Dependencies
-          key: cci-demo-haskell-v1-{{ checksum "stack.yaml" }}
+          key: cci-demo-haskell-v1-{{ checksum "stack.yaml" }}-{{ checksum "hablog.cabal" }}
           paths:
             - "/root/.stack"
             - ".stack-work"
       - store_artifacts:
           # Upload test summary for display in Artifacts: https://circleci.com/docs/2.0/artifacts/ 
-          path: ~/.local/bin/circleci-demo-haskell-exe
-          destination: circleci-demo-haskell-exe
+          path: ~/.local/bin/hablog
+          destination: hablog
