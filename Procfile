@@ -1,1 +1,1 @@
-web: dist/hablog --title "Musings on Tech" --theme dark --domain "mdoughtyblog.herokuapp.com" --port $PORT http
+web: dist/hablog --title "Musings on Tech" --theme dark --domain "mdoughtyblog.herokuapp.com" http --port $PORT
