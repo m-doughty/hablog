@@ -24,7 +24,7 @@ jobs:
           command: |
             stack config set system-ghc --global true
       - run:
-          name: Statically compile Yesod app
+          name: Statically compile Blog
           command: |
             stack --local-bin-path ~/app/dist install --ghc-options '-optl-static -fPIC'
       - run:
