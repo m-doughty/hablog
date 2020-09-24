@@ -14,11 +14,8 @@ jobs:
           name: Resolve/Update Dependencies
           command: stack --no-terminal setup
       - run:
-          name: Run tests
-          command: stack --no-terminal test
-      - run:
           name: Install executable
-          command: stack --no-terminal install
+          command: stack build --no-terminal --test --copy-bins
       - save_cache:
           name: Cache Dependencies
           key: cci-demo-haskell-v1-{{ checksum "stack.yaml" }}-{{ checksum "hablog.cabal" }}
