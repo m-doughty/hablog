@@ -1,7 +1,7 @@
 title: How I Run Hablog (Or Any Other Haskell Application) on Heroku with CircleCI
 authors: Matt
 route: hablog-on-heroku
-date: 2014-11-08
+date: 2020-09-25
 tags: programming, haskell, hablog, heroku, circleci
 
 ---
