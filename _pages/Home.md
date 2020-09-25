@@ -3,60 +3,26 @@ title: Home
 
 ---
 
-A simple static blog platform with tags. Made with Haskell and Scotty.
+# The Fine Line
 
-Hablog will read posts written in Markdown from the `_posts` folder.
+## About Me
 
-License
-=======
+I'm Matt, I've been a software engineer since 2013, starting out with OOP languages like Java and PHP before making
+the jump to the functional paradigm. I consider myself a 
+[polyglot](https://blog.lelonek.me/be-a-polyglot-programmer-6e7423916ed8), a 
+[remote-first evangelist](https://stackoverflow.blog/2017/02/08/means-remote-first-company/), and a
+[classical liberal](https://mises.org/library/what-classical-liberalism). For my sins, I'm also a Luton Town fan.
 
-Hablog is licensed under MIT license. This means the Haskell source files in the src directory.
-Highlight.js related content is not a part of Hablog and is not licensed by it.
+## About The Blog
 
+The name, *The Fine Line*, is taken from the famous quote from Oscar Levant: "There's a fine line between genius and
+madness." I feel like this blog will be walking the line a lot over the next few months, so it seemed like a fitting
+title. That and the `.io` wasn't taken.
 
-Installation
-============
+The blog runs on my fork of [hablog](https://github.com/m-doughty/hablog), a simple Haskell application which builds
+blogs from Markdown, is built on [CircleCI](https://circleci.com/gh/m-doughty/hablog), and runs on a
+[Heroku](https://www.heroku.com) Hobby instance. It took me about five hours to set up, but that was mostly my lack
+of knowledge of the build tools.
 
-```sh
-git clone https://github.com/soupi/hablog
-cd hablog
-stack build
-```
-
-
-How to write a new post?
-========================
-
-1. All posts must go under the `/_posts/` directory
-1. All pages must go under the `/_pages/` directory
-3. The content of the post/page must correspond to a specific structure
-
-## A Post's Structure
-
-```markdown
-title: <the title of the post>
-route: <route to the post>
-authors: <the author of the post, seperated, by, commas>
-date: yyyy-mm-dd
-tags: <tags for the post, separated, by, commas>
-
----
-
-<The rest of the post in Markdown format>
-```
-
-
-## A Page's Structure
-
-```markdown
-title: <the title of the page>
-route: <the route of the page>
-
----
-
-<The rest of the post in Markdown format>
-```
-
-## Home page
-
-The front page will either be `Home` or, if that isn't available, the blog page will be the front page.
+The blog is likely to cover functional programming (obviously), along with the tech industry, some politics and a
+smidge of current events. I'll try to keep the tags accurate so you'll be able to filter the posts you're interested in.

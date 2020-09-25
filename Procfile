@@ -1,1 +1,1 @@
-web: dist/hablog --title "Musings on Tech" --theme dark --domain "mdoughtyblog.herokuapp.com" http --port $PORT
+web: dist/hablog --title "The Fine Line" --theme dark --domain "thefineline.io" http --port $PORT
