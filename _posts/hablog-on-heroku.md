@@ -266,3 +266,8 @@ environment variables:
 - `HEROKU_API_KEY` should be set to your Heroku API key.
 - `HEROKU_APP_NAME` should be set to your Heroku app name.
 - `HEROKU_LOGIN` should be set to the e-mail address you used to sign up to Heroku.
+
+# Finishing Up
+
+Now, when you push to the `master` branch on Github, your application should be built on CircleCI and
+deployed to Heroku automatically.
