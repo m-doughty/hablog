@@ -39,7 +39,6 @@ jobs:
             - ".stack-work"
       - store_artifacts:
           path: ~/app/dist
-    deploy:
       - run:
           name: Setup Heroku
           command: bash .circleci/setup-heroku.sh
