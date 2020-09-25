@@ -40,7 +40,7 @@ to `Settings` and scroll to Buildpacks, you'll want to add Ryan Smith's
 [Null Buildpack](https://github.com/ryandotsmith/null-buildpack), so click Add Buildpack
 and enter this URL: `http://github.com/ryandotsmith/null-buildpack.git`.
 
-![](https://imgur.com/xbraCwE.png)
+![](https://imgur.com/mnC2zEW.png)
 
 Buildpacks are a way to tell Heroku how to build and release the application. Since we'll be handling our build
 process on CircleCI, we don't need Heroku to do anything except run the command, which is specified in the
@@ -68,7 +68,7 @@ later for CircleCI.
 Navigate to the CircleCI Dashboard, then Projects. Find the repository you want, then click 'Set Up Project'.
 You'll be presented with a bunch of options, but there's no Haskell option so pick `Use Existing Config`.
 
-![](https://imgur.com/1A5Oy2c.png)
+![](https://imgur.com/ojGwX6J.png)
 
 ## .circleci/config.yml
 
