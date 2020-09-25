@@ -16,9 +16,9 @@ the future, removing obstacles to publishing & journalism, international payment
 communication, and transportation. You'll often find me learning new languages or building personal 
 projects (far too few of which I open source) in order to explore new ways to tackle old obstacles.
 
-If your organization needs an engineer with a dearth of experience, a drive to forge the next generation
-of customer interactions, and an interest in technology which goes deeper than turning up and getting a 
-paycheck, get in contact.
+If your organization needs an engineer with an abundance of experience, a drive to forge the next 
+generation of customer interactions, and an interest in technology which goes deeper than turning up 
+and getting a paycheck, get in contact.
 
 ## Skills
 

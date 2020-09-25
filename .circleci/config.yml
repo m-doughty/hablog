@@ -39,6 +39,7 @@ jobs:
             - ".stack-work"
       - store_artifacts:
           path: ~/app/dist
+    deploy:
       - run:
           name: Setup Heroku
           command: bash .circleci/setup-heroku.sh
@@ -49,8 +50,8 @@ jobs:
           name: Deploy Master to Heroku
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              git config --global user.email "m.doughty@hushmail.com"
-              git config --global user.name "Matt Doughty"
+              git config --global user.email "${GIT_EMAIL}"
+              git config --global user.name "${GIT_NAME}"
               git add -f dist
               git commit -m "Deployment: Add dist folder"
               git push -f heroku master
